@@ -6,6 +6,9 @@
 import os
 import sys
 import logging
+import asyncio
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 
 # start msg
 print("Mega.nz Bot - Cypher is starting...")
