@@ -7,8 +7,6 @@ import os
 import sys
 import logging
 import asyncio
-loop = asyncio.new_event_loop()
-asyncio.set_event_loop(loop)
 
 # start msg
 print("Mega.nz Bot - Cypher is starting...")
@@ -22,6 +20,12 @@ if sys.platform != "win32":
         print("> Using uvloop for better performance")
     except ImportError:
         pass
+
+# --- FIX FOR PYTHON 3.12 EVENT LOOP ---
+# This MUST happen after uvloop.install() so it uses the new engine
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
+# --------------------------------------
 
 # loading config
 from dotenv import load_dotenv
