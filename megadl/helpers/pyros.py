@@ -33,7 +33,7 @@ async def track_progress(
         filled = min(int(percentage) // 5, 20)
         progress = f"{PROGRESS_BARS[filled]}\n**Process**: {percentage:.2f}%\n"
 
-        pmsg = f"{progress}{human_bytes(current)} of {human_bytes(total)}\n**Speed:** {human_bytes(speed)}/s\n**ETA:** {estimated_total_time if estimated_total_time != '' else '0 s'}\n\n\n**Powered by @NexaBotsUpdates**"
+        pmsg = f"{progress}{human_bytes(current)} of {human_bytes(total)}\n**Speed:** {human_bytes(speed)}/s\n**ETA:** {estimated_total_time if estimated_total_time != '' else '0 s'}\n\n\n**Powered by @xspes**"
         try:
             await client.edit_message_text(chat_id, msg_id, pmsg, **kwargs)
         except:
