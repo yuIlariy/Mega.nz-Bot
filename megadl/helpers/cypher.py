@@ -316,7 +316,7 @@ class MeganzClient(Client):
             if path:
                 await asyncio.to_thread(fs_cleanup,path)
         # no need for anything else
-        except asyncio.CancelledError::
+        except asyncio.CancelledError:
             pass
         except Exception as e:
             logging.debug(f"Cleanup error: {e}")
