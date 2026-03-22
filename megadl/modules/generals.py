@@ -21,7 +21,7 @@ I can help you download, upload files or folders from telegram.
 Not sure what to do? Check /help for more info 😇
 
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Powered ❤️ by @xspes**
     """,
         disable_web_page_preview=True,
     )
@@ -50,6 +50,6 @@ async def help_msg(_: CypherClient, msg: Message):
   ⤷ Send /acc command and I'll send you your account details 🫣
 
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Powered By ❤️ by @xspes**
       """
     )
