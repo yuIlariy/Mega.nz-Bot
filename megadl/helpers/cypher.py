@@ -215,7 +215,7 @@ class MeganzClient(Client):
                 if not can_use:
                     await self.cyeor(
                         msg,
-                        "`You're not authorized to use this bot 🙅‍♂️` \n\n**Join @NexaBotsUpdates ❤️**",
+                        "`You're not authorized to use this bot 🙅‍♂️` \n\n**Contact @xspes ❤️**",
                         True,
                     )
                     return msg.stop_propagation()
